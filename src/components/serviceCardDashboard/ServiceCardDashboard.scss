@@ -1,0 +1,102 @@
+.service-card {
+    max-width: 25vw;
+    border-radius: 1.25rem;
+    overflow: hidden;
+	position: relative;
+}
+.service-card-booking{
+	transform: scale(0.9);
+}
+.booking-btn{
+	border-radius:0.625rem !important;
+}
+
+.img-wrapper {
+    width: 100%;
+    object-fit: cover;
+	overflow: hidden;
+	height: 13.3125rem;
+	img{
+		height: 100%;
+		transform: scale(1.025);
+	}
+}
+
+.card-body {
+    padding: 1.25rem;
+	display: flex;
+	flex-flow: column;
+}
+.card-body .body-top {
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.375rem;
+    margin-bottom: 1.25rem;
+    div,
+    h5 {
+        // border: 1px solid aqua;
+        margin: auto 0;
+    }
+    .card-title {
+        font-size: 1.6875rem;
+        font-weight: 600;
+    }
+    div.actual-price {
+        color: #28acea;
+        margin-right: .5rem;
+    }
+    div.original-price {
+        text-decoration: line-through;
+    }
+}
+.price-side {
+    display: flex;
+}
+div.text-mid {
+    p.card-text {
+        font-family: "Roboto", sans-serif;
+        padding-right: .625rem;
+        font-weight: 600;
+        color: rgba(75, 75, 75, 0.623);
+        line-height: 1.7;
+    }
+    margin-bottom: 1.25rem;
+}
+
+.card-buttons {
+    display: flex;
+	text-align: center;
+	margin-top: auto;
+}
+.edit-button{
+	background-color: #28acea;
+	border-radius: .625rem 0 0 .625rem;
+}
+.delete-button{
+	background-color: black;
+	border-radius: 0 .625rem .625rem 0;
+}
+
+.icon{
+	color: white;
+}
+
+.button-sj-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	padding: .9375rem 1.875rem;
+	font-size: 1.25rem;
+	font-weight: 600;
+    // padding: 0.9375rem 2.9rem;
+}
+
+.button-text{
+	color: white;
+	margin-left: .3125rem;
+}

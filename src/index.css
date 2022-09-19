@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+	/* CSS HEX */
+--white: #ffffffff;
+--ghost-white: #f2f2f7ff;
+--eerie-black: #272522ff;
+--turquoise: #30d5c8ff;
+--blue-jeans: #28aceaff;
+
+/* CSS HSL */
+--white: hsla(0, 0%, 100%, 1);
+--ghost-white: hsla(240, 24%, 96%, 1);
+--eerie-black: hsla(36, 7%, 14%, 1);
+--turquoise: hsla(175, 66%, 51%, 1);
+--blue-jeans: hsla(199, 82%, 54%, 1);
+
+/* SCSS HEX */
+/* $white: #ffffffff;
+$ghost-white: #f2f2f7ff;
+$eerie-black: #272522ff;
+$turquoise: #30d5c8ff;
+$blue-jeans: #28aceaff; */
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+	/* outline: 1px solid red; */
+  }
+
+  body{
+	/* background-color: #F2F2F7; */
+	background-color: #ECF4FA;
+	width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+	/* min-height: 100vh; */
+  }
+  /* #root{
+	min-height: 100vh;
+  } */
+  
+  body #bgmig{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    object-fit:cover;
+  }
+  
+  #black, #navbarDropdown{
+      color: black;
+      font-family: 'Jost', sans-serif;
+  }
+  .navbar-brand
+  {
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  #college{
+      
+      color: rgb(49, 160, 114);
+  }
+  #help{
+      color: rgb(78, 95, 248);
+  }
+  .nav-item
+  {
+      margin: auto;
+      padding-right:20px ;
+  }
+  .nav-link:hover
+  {
+   text-shadow: 5px 2px 20px rgb(0, 30, 199);
+   font-size: 17px;
+  }
+  
+  .navbar-dark .navbar-toggler-icon{
+      background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 20, 300, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  .dropdown-menu{
+      background-color: rgb(220, 223, 250);
+      color: black;
+  }
+  
+  #blue{
+      color: rgb(78, 95, 248);
+  }
+  #home,#contact,#about,#contribute{
+    color: black;
+  }
+  #college{
+      
+    color: rgb(49, 160, 114);
+  }
+  #help{
+    color: rgb(78, 95, 248);
+  }
+  #blue{
+    color: rgb(78, 95, 248);
+  }
+  

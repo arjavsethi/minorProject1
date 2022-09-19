@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+// font-family: 'Lexend Deca', sans-serif;
+// font-family: 'Ubuntu', sans-serif;
+.t-and-c-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: "Ubuntu";
+}
+
+div.welcome-top {
+    h2 {
+        font-family: "Lexend Deca";
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        font-size: 35px;
+        font-weight: 600;
+    }
+}
+
+div.terms-container {
+    ol.terms-section-ol {
+        h4 {
+            color: #33ccff;
+            font-size: 32px;
+            font-family: "Lexend Deca";
+			margin-top: 20px;
+        }
+        h6 {
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        ul.subterm-section-ul-points {
+            list-style-type: disc;
+
+            li {
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            ol.sub-details-ol {
+                li {
+                    font-size: 17px;
+					margin-bottom: 0px;
+                }
+            }
+            p.subterm-section-special {
+				margin-top: 10px;
+                font-size: 19px;
+                font-weight: 500;
+                font-style: italic;
+            }
+        }
+    }
+}
+.top-wrapper-tnc{
+	margin: 0 auto;
+	width: max-content;
+}
+.tnc-hr{
+	width: 50% !important;
+}
+div.tnc-form-wrapper{
+	width: 80%;
+}
+
+.tnc-div-wrapper{
+	display: flex;
+	align-items: center;
+	width: 80%;
+}
+
+input.input-tnc-check{
+	transform: scale(1.5);
+	margin-right: 20px;
+}
+
+.bottom-hr{
+	width: 80% !important;
+	margin: 30px auto !important;
+	// margin-bottom: 20px !important;
+}
+
+button.tnc-button{
+	margin-top: 20px
+}
+
+@media (max-width:500px) {
+    div#login-form {
+        padding: 0px !important;
+        padding-top: 25px !important;
+    }
+
+}

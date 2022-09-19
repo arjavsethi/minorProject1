@@ -1,0 +1,240 @@
+.mainCon {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .features {
+        margin-top: 40px;
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .imgsection {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        img {
+            width: 60%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .imgsection {
+            img {
+                margin: auto;
+            }
+        }
+    }
+}
+
+.about {
+    background-image: url("../../assets/bgimage.png");
+    padding: 20px;
+
+    .imgsection1 {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 70%;
+            height: auto;
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding-top: 30px;
+    }
+
+    .aboutdata {
+        text-align: center;
+    }
+
+    #head1 {
+        margin-top: 30px;
+    }
+}
+
+.part {
+    div {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 25px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 700px) {
+        #p1 {
+            margin-top: -10px;
+        }
+    }
+}
+
+.mainCard {
+    width: 70vw;
+}
+
+.cardContainer {
+    display: grid;
+    place-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    .card {
+        width: 340px;
+        height: auto;
+
+        img {
+            border-radius: 20px;
+        }
+
+        border: none;
+    }
+}
+
+.gallery {
+    width: 100%;
+
+    h2 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .salon {
+        width: 70%;
+
+        .row div {
+            display: grid;
+            place-content: center;
+            padding: 10px;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+        }
+    }
+}
+
+.blog {
+    width: 100%;
+
+    h2 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .salon {
+        width: 70%;
+
+        .row div {
+            display: grid;
+            place-content: center;
+            padding: 10px;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+        }
+    }
+
+    .content {
+        text-align: center;
+        box-shadow: 1px 1px 10px rgb(157, 157, 157);
+        border-radius: 10px;
+
+        h5 {
+            margin-top: 20px;
+        }
+
+        p {
+            padding: 30px;
+        }
+    }
+}
+
+.h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#head1 {
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #28acea;
+    letter-spacing: 5px;
+    font-size: 17px;
+}
+h2.subheading-home {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+.home-sub-hr {
+    width: 7% !important;
+}
+
+p.sub-about-us-text {
+    font-size: 20px;
+    padding-right: 5.625rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+p.sub-feature-text {
+    font-size: 20px;
+    // padding-right: 5.625rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+div.sub-feature-wrapper{
+	display: flex;
+	align-items: center;
+	img{
+		width: 60px;
+		object-fit: cover;
+	}
+	p{
+		font-family: "Fira Sans", sans-serif;
+	}
+}
+
+.about {
+    padding: 70px 0;
+}
+
+.correction-class{
+	width: 100%;
+	overflow: hidden;
+}
+
+@media (max-width:500px) {
+    
+    .aboutdata{
+		padding: 0;
+		margin: 0 auto;
+	}
+	p.sub-about-us-text {
+		font-size: 20px;
+		margin: 0 auto !important;
+		padding:0 30px;
+		font-size: 18px;
+		color: rgba(0, 0, 0, 0.5);
+	}
+	.home-sub-hr {
+		margin: 0px auto 10px !important;
+		width: 30% !important;
+	}
+}

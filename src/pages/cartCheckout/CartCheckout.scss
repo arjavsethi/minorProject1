@@ -1,0 +1,37 @@
+@media (min-width: 1024px) {
+    .salonName {
+        margin-top: auto !important;
+    }
+    .cartCard {
+    }
+    .specialistImgWrapper {
+        border-width: 8px !important;
+    }
+    .specialistImgWrapper:hover {
+        border-color: #28acea !important;
+    }
+    .cartCardHr {
+        top: 20% !important;
+        margin-left: -0.5rem !important;
+        margin-right: -0.5rem !important;
+    }
+    .bookSlot-button {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+    .cart-delete-icon {
+        font-size: 2.5rem !important;
+    }
+    .delete-cart {
+        margin-top: auto !important;
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+        // padding-top: 1.5rem !important;
+        // padding-top: 1.5rem !important;
+    }
+    .content-cart {
+        padding: 25px !important;
+    }
+}

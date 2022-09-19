@@ -1,0 +1,194 @@
+.dashboard-wrapper {
+    width: 80%;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+    div.month-input-wrapper {
+        position: relative;
+        padding-top: 20px;
+        // border: 1px solid black;
+        text-align: right;
+        padding-right: 55px;
+    }
+}
+
+.chartBox {
+    width: 90%;
+    min-height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.journey {
+    margin-top: 20px;
+    width: 100%;
+
+    .row {
+        width: 85%;
+        margin: auto;
+    }
+
+    .boxCon {
+        display: grid;
+        place-content: center;
+
+        .box {
+            width: 280px;
+            height: 100px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px rgb(174, 173, 173);
+            margin-top: 20px;
+
+            img {
+                width: 50px;
+                height: 50px;
+                margin-top: 25px;
+                float: left;
+                margin-left: 40px;
+            }
+
+            p {
+                display: inline-block;
+                margin-top: 20px;
+                margin-left: 20px;
+                font-weight: bolder;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            section {
+                margin-left: 110px;
+                margin-top: -15px;
+                font-weight: bold;
+                color: rgb(149, 148, 148);
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.dash-seperate-hr {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 50%;
+    // height: 100px;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    div.dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: rgba(40, 173, 234, 0.4);
+    }
+}
+
+.dashboard-mid-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4.0625rem;
+    margin-top: 50px;
+}
+
+.dashboard-bottom-wrapper {
+    padding: 10px 45px;
+    // border: 1px solid black;
+    margin-top: 30px;
+}
+.dash-heading {
+    margin-left: 20px;
+}
+p.dash-heading {
+    font-size: 30px !important;
+}
+
+.subdash-top-wrapper {
+    display: flex;
+    // border: 1px solid black;
+    justify-content: space-between;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.button-dash-wrapper {
+    button {
+        border: none;
+        cursor: pointer;
+        padding: 7px 25px;
+        background-color: #28acea;
+        font-size: 18px;
+        font-family: "Fira Sans", sans-serif;
+        color: white;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .bookings {
+        padding-left: 0px;
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+
+    .dashboard-mid-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin-top: 50px;
+        .button-dash-wrapper {
+            button {
+                border: none;
+                cursor: pointer;
+                padding: 7px 10px;
+				margin: 0 10px;
+                background-color: #28acea;
+                font-size: 12px;
+                font-family: "Fira Sans", sans-serif;
+                color: white;
+                border-radius: 5px;
+            }
+        }
+    }
+
+	p.subheading.dash-heading{
+		margin-left: 0 !important;
+		font-size: 20px !important;
+	}
+	.small-one-hr.dash-heading{
+		margin: 0;
+	}
+	.dashboard-bottom-wrapper {
+		padding: 0px 10px;
+		// border: 1px solid black;
+		margin-top: 30px;
+		.subdash-top-wrapper{
+			padding-right: 0px;
+			padding: 0 10px ;
+		}
+		.button-dash-wrapper{
+			button {
+				padding: 5px 10px;
+				background-color: #28acea;
+				font-size: 13px;
+				font-family: "Fira Sans", sans-serif;
+				color: white;
+				border-radius: 5px;
+			}
+		}
+	}
+
+	.dash-catalouge{
+		grid-template-columns: 1fr !important;
+		padding-left: 0 ;
+	}
+	.specialist-edit-services-card-ul {
+		padding-left: 0px;
+		li {
+			margin-top: 5px !important;
+		}
+	}
+}

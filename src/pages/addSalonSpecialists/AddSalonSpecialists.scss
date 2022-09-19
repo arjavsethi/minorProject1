@@ -1,0 +1,99 @@
+.header-wrapper{
+	
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 80%;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	border-radius: 10px;
+	overflow: hidden;
+
+}
+.new-service-form{
+	padding: 20px;
+}
+
+.salonCon {
+	border-radius: 0;
+	width: 100%;
+    margin: auto;
+    display: grid;
+    place-content: center;
+    height: 100%;
+    background-image: url("../../assets/r5.png");
+    background-position: center;
+    background-size: cover;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+	margin-bottom: 50px;
+}
+.serbtn {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    margin-top: -10px;
+}
+.services-wrapper {
+    display: grid;
+
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+    gap: 20px 20px;
+    justify-items: center;
+    div:nth-child(3n) {
+        justify-self: end;
+    }
+	div:nth-child(3n-2) {
+        justify-self: start;
+    }
+}
+.all-done-wrapper{
+	margin: 0 auto;
+	text-align: center;
+}
+button.btn-services-all-done{
+	width: 80%;
+	font-size: 30px;
+	margin-top: 40px;
+}
+
+ul.services-ul{
+	display: flex;
+	padding: unset;
+	list-style-type: none;
+	li{
+		margin: 0 10px;
+	}
+}
+.add-service{
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 100%;
+	background-color: #28ACEA;
+	display: grid;
+	place-items: center;
+}
+.service-input-wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.service-solo-input{
+	width: 90%;
+}
+
+@media (max-width: 500px) {
+    .salonCon {
+        width: 95%;
+        height: 200px;
+    }
+    .services-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+

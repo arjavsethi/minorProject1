@@ -1,0 +1,78 @@
+.bookingCon{
+	width: 100%;
+	// background-color: white;
+	margin: 0 auto;
+	padding: 30px 40px;
+}
+.services-deck-wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.services-selected{
+	min-height: 415px;
+}
+p.subheading{
+	font-size: 20px;
+	margin-bottom: 0;
+	font-family: "Fira Sans", sans-serif;
+}
+.login-hr.small-one-hr{
+	width: 40px;
+	height: 1px !important;
+}
+
+@media (max-width:600px) {
+    .bookingCon{
+		margin-top: 20px;
+        padding: 0px 30px;
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+	
+}
+
+@media (max-width:500px) {
+	button.buttonCheckoutBooking {
+		margin: 10px 0;
+		margin-top: 10px !important;
+	}
+	.booking-sub{
+		text-align: center;
+		font-size: 15px !important;
+		width: 70%;
+	}
+
+	.margin-auto{
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+	.services-selected{
+	  min-height: 30px;	
+	}
+
+	.login-title, .login-hr, .subheading{
+		// margin-left: 30px;
+		// font-size: 18px;
+	}
+	p.added-services.login-title{
+		font-size: 18px !important;
+	}
+    .services-deck-wrapper{
+	  grid-template-columns: 1fr;
+	  padding-left: 0px !important;
+	}
+
+	// .button-booking{
+	// 	width: 280px !important;
+	// 	margin-left: 40px !important;
+	// }
+	
+}
+
+@media (min-width:768px) {
+	.servicesCatalogue{
+		padding-left: 2.25rem !important;
+		padding-right: 2.25rem !important;
+	}
+}

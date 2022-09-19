@@ -1,0 +1,255 @@
+.service-card {
+    max-width: 25vw;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    position: relative;
+}
+.service-card-booking {
+    transform: scale(0.9);
+}
+.booking-btn {
+    border-radius: 0.625rem !important;
+}
+
+.img-wrapper {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    height: 13.3125rem;
+    img {
+        height: 100%;
+        transform: scale(1.025);
+    }
+}
+
+.card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-flow: column;
+}
+.card-body .body-top {
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.375rem;
+    margin-bottom: 1.25rem;
+    div,
+    h5 {
+        // border: 1px solid aqua;
+        margin: auto 0;
+    }
+    .card-title {
+        font-size: 1.6875rem;
+        font-weight: 600;
+    }
+    div.actual-price {
+        color: #28acea;
+        margin-right: 0.5rem;
+    }
+    div.original-price {
+        text-decoration: line-through;
+    }
+}
+.price-side {
+    display: flex;
+}
+div.text-mid {
+    p.card-text {
+        font-family: "Roboto", sans-serif;
+        padding-right: 0.625rem;
+        font-weight: 600;
+        color: rgba(75, 75, 75, 0.623);
+        line-height: 1.7;
+    }
+    margin-bottom: 1.25rem;
+}
+
+.card-buttons {
+    display: flex;
+    text-align: center;
+    margin-top: auto;
+}
+.edit-button {
+    background-color: #28acea;
+    border-radius: 0.625rem 0 0 0.625rem;
+}
+.delete-button {
+    background-color: black;
+    border-radius: 0 0.625rem 0.625rem 0;
+}
+
+.icon {
+    color: white;
+}
+
+.button-sj-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0.9375rem 1.875rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    // padding: 0.9375rem 2.9rem;
+}
+
+.button-text {
+    color: white;
+    margin-left: 0.3125rem;
+}
+
+.specialist-selection {
+    div.specialists-list div:first-child {
+        margin-top: 0px !important;
+    }
+    div.specialists-list div:last-child {
+        margin-bottom: 0 !important;
+    }
+    div.specialists-list {
+        margin-left: 20px;
+        background-color: white;
+        border-radius: 3px;
+        overflow: hidden;
+        padding: 0;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+        // border: 1px solid black;
+
+        .list-top {
+            text-align: center;
+			position: relative;
+			// border: 1px solid black;
+            p.specialist-list-heading {
+                margin-bottom: 0;
+                font-family: "Fira Sans";
+                font-weight: 700;
+                font-size: 20px;
+                margin: 5px 0;
+                // border: 1px solid black;
+            }
+			p.close-list{
+				position: absolute;
+				top: 0;
+				right: 0;
+				margin: 3px;
+				background-color: black;
+				color: white;
+				border-radius: 2px;
+				padding: 5px 8px !important;
+			}
+        }
+        .list-end {
+            // border: 1px solid black;
+            padding: 0 10px;
+            margin-bottom: 10px;
+            .final-out {
+                // margin: 10px 0;
+                text-align: center;
+                border-radius: 5px;
+                display: grid;
+                place-items: center;
+                width: 100%;
+                background-color: #28acea;
+                .fa-icon-final-out {
+                    color: white;
+                    font-size: 20px;
+                    margin: 5px;
+                }
+            }
+        }
+		div.no-specialist{
+			margin: 0px 30px;
+			p.no-specialist-text{
+				font-size: 20px;			
+			}
+		}
+
+        // overflow: hidden;
+        div.specialist-solo:hover {
+            background-color: rgba(40, 173, 234, 0.2);
+            div.specialist-info {
+                border-right: 10px solid #28acea;
+            }
+        }
+        div.specialist-solo.active-specialist {
+            background-color: rgba(40, 173, 234, 0.2);
+            div.specialist-info {
+                border-right: 10px solid #28acea;
+            }
+        }
+        div.specialist-solo {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            // align-items: stretch;
+            // justify-content: space-between;
+            padding-left: 10px;
+            // padding-right: 0;
+            div.specialist-img-wrapper {
+                padding: 10px 0;
+                margin-right: 10px;
+                overflow: hidden;
+                img {
+                    border-radius: 50%;
+                    width: 70px;
+                }
+            }
+            div.specialist-info {
+                // margin-right: 10px;
+                padding: 10px 0;
+                max-width: 310px;
+                border-right: 10px solid transparent;
+                p {
+                    margin-bottom: 0;
+                }
+                p.specialist-name {
+                    font-family: "Fira Sans";
+                    font-size: 20px;
+                }
+                p.specialist-desc {
+                    font-family: "Lato";
+                }
+            }
+            div.specialist-select {
+                border: 1px solid black;
+                padding: 10px;
+                min-width: 10px;
+                // align-self: stretch;
+                height: 100%;
+                margin-left: auto;
+                // display: flex;
+                // align-items: stretch;
+                .fa-icon-pop {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .service-card-booking {
+        transform: scale(0.8);
+    }
+	div.specialist-solo{
+		padding-left: 0 !important;
+		div.specialist-info {
+			margin-left: 10px;
+		}
+	}
+	.specialists-list{
+		transform: scale(0.9) translateX(-3%);
+
+		.specialist-img-wrapper{
+			width: 30%;
+			padding: 0 !important;
+			// padding-right: 10px !important;
+			margin-right: 0px !important;
+			img{
+				width: 55px !important;
+			}
+		}
+	}
+}

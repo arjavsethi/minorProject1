@@ -1,0 +1,113 @@
+.header-wrapper{
+	
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 80%;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	border-radius: 10px;
+	overflow: hidden;
+
+}
+.new-service-form{
+	padding: 20px;
+}
+
+.salonCon {
+	border-radius: 0;
+	width: 100%;
+    margin: auto;
+    display: grid;
+    place-content: center;
+    height: 100%;
+    background-image: url("../../assets/salonbg.png");
+    background-position: center;
+    background-size: cover;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+	margin-bottom: 50px;
+}
+.serbtn {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    margin-top: -10px;
+}
+.services-wrapper {
+    display: grid;
+
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+    gap: 20px 20px;
+    justify-items: center;
+    div:nth-child(3n) {
+        justify-self: end;
+    }
+	div:nth-child(3n-2) {
+        justify-self: start;
+    }
+}
+.all-done-wrapper{
+	margin: 0 auto;
+	text-align: center;
+}
+button.btn-services-all-done{
+	width: 80%;
+	font-size: 30px;
+}
+
+@media (max-width: 500px) {
+    .salonCon {
+        width: 95%;
+        height: 200px;
+    }
+    .services-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:1000px) {
+    .salonCon {
+        width: 300px !important;
+        border-radius: 20px 20px 0px 0px !important;
+        height: 300px !important;
+        margin-top: 0px !important;
+    }
+
+    .new-service-form {
+
+        margin-top: 300px !important;
+        width: 500px !important;
+        margin-left: -200px !important;
+    }
+}
+
+
+@media (max-width:500px) {
+    .salonCon {
+        width: 360px !important;
+        height: 200px !important;
+        font-size: 25px !important;
+        padding-right: 60px !important;
+    }
+
+    .new-service-form {
+        width: 320px !important;
+        margin-left: -130px !important;
+        margin-top: 200px !important;
+    }
+
+    .services-wrapper {
+        width: 100% !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    button.btn-services-all-done {
+        width: 90% !important;
+        font-size: 20px !important;
+    }
+}

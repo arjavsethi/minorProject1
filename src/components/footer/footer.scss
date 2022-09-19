@@ -1,0 +1,133 @@
+.footer {
+  padding: 2% 7%;
+  background: linear-gradient(rgb(41, 40, 40), rgb(7, 7, 7));
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul>li {
+    padding: 4px;
+    color: #b3b2b2;
+  }
+
+  ul>li:hover {
+    color: rgb(110, 109, 109);
+    cursor: pointer;
+  }
+
+  hr {
+    border-width: 3px;
+  }
+
+
+
+  .card-text {
+    color: white;
+  }
+
+  .social>i {
+    padding: 1%;
+    font-size: 15px;
+    color: #696969;
+  }
+
+  .social>i:hover {
+    color: rgb(235, 232, 232);
+    cursor: pointer;
+  }
+
+  .pull p{
+    text-align: center;
+    color: rgb(150, 148, 148);
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .policy,
+  .pull-left {
+    color: rgb(150, 148, 148);
+  }
+
+  .policy>div {
+    padding: 4px;
+  }
+
+  .heading {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #b3b2b2;
+
+    &:hover {
+      color: rgb(110, 109, 109);
+    }
+  }
+
+  .divider {
+    border-top: 2px solid;
+  }
+
+  .fa {
+    color: #696969;
+    margin-right: 10px;
+  }
+
+  .fa:hover {
+    color: rgb(235, 232, 232);
+    cursor: pointer;
+  }
+
+  .fa i {
+    font-size: 16px;
+    color: rgb(19, 17, 17) !important;
+    text-decoration: none;
+    background-color: #696969;
+    padding: 3px;
+    margin-right: 0px;
+    border-radius: 2px;
+  }
+
+  .fa i:hover {
+    background-color: rgb(235, 232, 232);
+  }
+  
+}
+
+.footer-tnc p{
+	margin-bottom: 0 !important;
+}
+@media (max-width: 580px) {
+  #cardcontainer {
+    text-align: center;
+  }
+
+  h1 {
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .policy {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 580px) {
+  #cardcontainer {
+    text-align: center;
+  }
+
+  h1 {
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .policy {
+    justify-content: center;
+  }
+}

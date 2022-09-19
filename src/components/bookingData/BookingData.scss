@@ -1,0 +1,371 @@
+.bookings-data-wrapper {
+    // border: 1px solid black;
+    width: 80%;
+    margin: 90px auto 0;
+    h6.table-heading {
+        font-size: 30px;
+        font-family: "Fira Sans";
+    }
+    div.table-head-hr {
+        width: 30%;
+    }
+}
+
+.bookings-table {
+}
+.booking-solo-row {
+    background-color: white;
+    // display: flex;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    // align-items: center;
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin: 15px 0;
+    div.customer {
+        // margin-left: 25px;
+        grid-column: 1/5;
+        display: flex;
+        align-items: center;
+        div.customer-image-wrapper {
+            margin-right: 25px;
+            img {
+                width: 70px;
+            }
+        }
+        div.customer-info {
+            p.customer-name {
+                margin-bottom: -2px;
+                font-family: "Lexend Deca";
+                font-weight: 500;
+                font-size: 22px;
+                letter-spacing: 1px;
+                line-height: 1;
+            }
+            p.customer-number {
+                margin-bottom: 0;
+                font-family: "Lato", sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+    div.booking-status {
+        grid-column: 6/8;
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        position: relative;
+        div.change-status-icon-wrapper {
+            margin-left: 5px;
+            transform: rotate(90deg);
+            img {
+                width: 30px;
+            }
+        }
+        button {
+            border: none;
+            padding: 10px 18px;
+            background-color: #28acea;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+            font-family: "Lexend Deca";
+        }
+        button.btn-cancelled {
+            background-color: red;
+        }
+        button.btn-pending {
+            background-color: #28acea;
+        }
+        button.btn-done {
+            background-color: limegreen;
+        }
+    }
+    div.booking-date {
+        grid-column: 9/11;
+        justify-self: center;
+        font-family: "Lexend Deca";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        p.booking-time-inner {
+            margin-bottom: 0;
+            font-size: 25px;
+        }
+        p.booking-date-inner {
+            margin-bottom: 0;
+            font-size: 21px;
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+    div.booking-action {
+        grid-column: 12/13;
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        div.more-icon-wrapper {
+            // border: 1px solid black;
+            img {
+                width: 40px;
+            }
+        }
+    }
+}
+
+div.options-menu {
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+    div.more-options-menu-inner {
+        div.options-menu-body {
+            // padding: 10px 20px;
+            ul.options-ul {
+                list-style-type: none;
+                // border: 1px solid black;
+                padding-left: 0;
+                margin-bottom: 0px;
+                padding: 5px;
+                li {
+                }
+            }
+        }
+    }
+}
+
+.status-change-menu {
+    // position: absolute;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px 30px;
+    div.status-change-menu-inner {
+        div.status-menu-top {
+            p.status-head {
+                margin-bottom: 10px;
+                font-family: "Lexend Deca";
+                font-size: 20px;
+            }
+        }
+        div.status-checkbox-wrapper {
+            display: flex;
+            justify-content: space-between;
+            // .status-icon-wrapper{
+            .fa-icon {
+                font-size: 40px;
+                transition: all 0.2s ease-in-out;
+            }
+            .fa-cancel-icon {
+                color: red;
+            }
+            .fa-pending-icon {
+                color: #28acea;
+            }
+            .fa-check-icon {
+                color: limegreen;
+            }
+            .active-status.fa-icon {
+            }
+            .active-status.fa-icon {
+                transform: scale(1.3);
+            }
+            // }
+        }
+        div.status-change-menu-bottom {
+            // border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            background-color: #28acea;
+            border-radius: 5px;
+            margin: 10px 0;
+            .fa-check-bottom {
+                margin: 5px 0;
+                // border: 1px solid black;
+                font-size: 30px;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .bookings-data-wrapper {
+        width: 90%;
+        margin: 90px auto 0;
+        h6.table-heading {
+            font-size: 25px;
+            font-family: "Fira Sans";
+        }
+        div.table-head-hr {
+            width: 30%;
+        }
+    }
+
+    .booking-solo-row {
+        background-color: white;
+        // display: flex;
+        // justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 60px 50px;
+        // align-items: center;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 0;
+        div.customer {
+            grid-column: 1/4;
+            grid-row: 1/2;
+            display: flex;
+            align-items: center;
+            div.customer-image-wrapper {
+                margin-right: 15px;
+                img {
+                    width: 50px;
+                }
+            }
+            div.customer-info {
+                p.customer-name {
+                    margin-bottom: -2px;
+                    font-family: "Lexend Deca";
+                    font-weight: 500;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                }
+                p.customer-number {
+                    margin-bottom: 0;
+                    font-family: "Lato", sans-serif;
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+        div.booking-status {
+            grid-column: 3/5;
+            grid-row: 2/3;
+            // border: 1px solid black;
+            justify-self: flex-end;
+            display: flex;
+            align-items: center;
+            position: relative;
+            div.change-status-icon-wrapper {
+                margin-left: 2px;
+                transform: rotate(90deg);
+                img {
+                    width: 25px;
+                }
+            }
+            button {
+                border: none;
+                padding: 5px 10px;
+                background-color: #28acea;
+                border-radius: 5px;
+                color: white;
+                font-size: 16px;
+                font-family: "Lexend Deca";
+            }
+            button.btn-cancelled {
+                background-color: red;
+            }
+            button.btn-pending {
+                background-color: #28acea;
+            }
+            button.btn-done {
+                background-color: limegreen;
+            }
+        }
+        div.booking-date {
+            grid-column: 1/3;
+            grid-row: 2/3;
+            justify-self: flex-start;
+            font-family: "Lexend Deca";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 5px;
+            p.booking-time-inner {
+                margin-bottom: -5px;
+                font-size: 16px;
+            }
+            p.booking-date-inner {
+                margin-bottom: 0;
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.7);
+            }
+        }
+        div.booking-action {
+            grid-column: 4/5;
+            grid-row: 1/2;
+            justify-self: flex-end;
+            display: flex;
+            align-items: center;
+            div.more-icon-wrapper {
+                // border: 1px solid black;
+                img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+    .status-change-menu {
+        // position: absolute;
+        background-color: white;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 10px;
+        div.status-change-menu-inner {
+            div.status-menu-top {
+                p.status-head {
+                    margin-bottom: 5px;
+                    font-family: "Lexend Deca";
+                    font-size: 16px;
+                }
+            }
+            div.status-checkbox-wrapper {
+				padding-left: 0.75rem;
+				padding-right: 0.75rem;
+                display: flex;
+                justify-content: space-around;
+                // .status-icon-wrapper{
+                .fa-icon {
+                    font-size: 30px;
+                    transition: all 0.2s ease-in-out;
+                }
+                .fa-cancel-icon {
+                    color: red;
+                }
+                .fa-pending-icon {
+                    color: #28acea;
+                }
+                .fa-check-icon {
+                    color: limegreen;
+                }
+                .active-status.fa-icon {
+                }
+                .active-status.fa-icon {
+                    transform: scale(1.5);
+                }
+                // }
+            }
+            div.status-change-menu-bottom {
+                // border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                background-color: #28acea;
+                border-radius: 5px;
+                margin: 10px 0;
+                .fa-check-bottom {
+                    margin: 5px 0;
+                    // border: 1px solid black;
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

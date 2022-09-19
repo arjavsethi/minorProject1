@@ -1,0 +1,63 @@
+.user-type-cards-wrapper{
+ transform: translate(20%, 25%);
+}
+.type-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 50px;
+    max-width: 60%;
+	border-radius: 10px;
+    box-shadow: 4px 4px 15px rgb(0 0 0 / 20%);
+}
+
+h3 {
+	font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+	margin-bottom: 5px;
+	letter-spacing: 4px;
+}
+p{
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+}
+
+.type-card.buisness{
+	margin-top: 50px;
+	background:#28ACEA;
+	h3{
+		color: #fff;
+	}
+	p{
+		color: #fff;
+	}
+}
+
+.icon-container .icon-arrow-forward{
+	transform: scale(2);
+}
+.type-card.customer{
+	background-color: white;
+}
+
+@media (max-width:500px) {
+	.user-type-cards-wrapper {
+		transform: translate(0%, 0%);
+		margin-top: 50px;
+		width: 100vw;
+	}
+
+	.type-card{
+		max-width:95vw !important;
+		padding:30px 30px;
+		margin-left: 2.5vw;
+
+		h3{
+			font-size: 25px !important;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+	}
+
+}

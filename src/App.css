@@ -1,0 +1,8 @@
+div.app-wrapper{
+	width: 100%;
+	position: relative;
+}
+
+.cursor-pointer{
+	cursor: pointer;
+}

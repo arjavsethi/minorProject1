@@ -1,0 +1,109 @@
+.galCon{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    top:0;
+    right: 0;
+    background-color: rgb(0,0,0,0.8);
+    display: grid;
+    place-content: center;
+ 
+    .cancel{
+        width: 40px;
+        margin-bottom: 5px;
+        border: none;
+        background-color: rgb(0,0,0,0.07);
+        color: white;
+        margin-left: 86%;
+    }
+ 
+    .editdata{
+        width:80%;
+        background-color: white;
+        font-size: 14px;
+ 
+        .imgsection{
+            img{
+                width: 250px;
+                height: auto;
+                margin-top:30px;
+                margin-left:25px;
+                border-radius: 4px;
+            }
+            #file{
+                margin-top: 40px;
+                margin-left: 60px;
+                margin-bottom: 40px;
+            }
+        }
+ 
+        .data{
+            p{
+                margin-top: 20px;
+                font-weight: 500;
+            }
+ 
+            input{
+                width: 290px;
+                line-height: 35px;
+                background-color: #F0F0F0;
+                border: none;
+                border-radius: 4px;
+                padding-left: 20px;
+                font-size: 12px;
+            }
+            
+           .price{
+               width: 300px;
+               input{
+                   width: 130px;
+               }
+           }
+         
+            textarea{
+                display: block;
+                background-color: #F0F0F0;
+                border: none;
+                border-radius: 5px;
+                padding: 5px;
+            }
+            .btn{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 5px;
+                margin-right: 5px;
+                width: 137px;
+                font-size: small;
+            }
+         
+        }
+    }
+ 
+ }
+ 
+ @media (max-width:768px) {
+ 
+     .galCon{
+
+         .cancel{
+            margin-left: auto;
+         }
+
+         .editdata{
+             width: 95vw !important;
+     
+             .imgsection{
+                 display: grid;
+                 place-content: center;
+             }
+             
+             .data{
+                 display: grid;
+                 place-content: center;
+             }
+     
+         }
+      }
+ 
+ }

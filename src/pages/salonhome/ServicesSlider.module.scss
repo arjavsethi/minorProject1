@@ -1,0 +1,21 @@
+.servicesSliderWrapper{
+	// border: 1px solid black;
+	width: 100%;
+	min-height: 300px !important;
+	padding-bottom: 20px;
+
+	
+
+	.swiper-parent-slider {
+		width: 100%;
+		height: 450px !important;
+		
+		.swiper-slider {
+			img {
+				width: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+	}
+}

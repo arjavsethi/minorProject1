@@ -1,0 +1,215 @@
+.proCon {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    place-content: center;
+    margin-top: 50px;
+    height: 250px;
+    border-radius: 10px;
+    background-image: url("../../assets/bg.png");
+    background-position: center;
+    background-size: cover;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.edit-button-wrapper{
+	display: flex;
+	flex-direction: column;
+	
+	button{
+		width: 70%;
+		margin-left: auto;
+	}
+
+}
+
+.modal-footer{
+	border: none;
+	// border-top: 1px solid black;
+}
+
+.modal-wrapper-outer{
+	position: absolute;
+	margin-top: 10px;
+}
+
+.button-wrapper-modal{
+	display: flex;
+	// border: 1px solid black;
+	justify-content: space-between;
+}
+.btn-save{
+	margin-left: 20px;
+	width: 80% !important;
+}
+
+@media (max-width:500px) {
+    .proCon {
+        width: 95%;
+        height: 200px;
+    }
+}
+
+.proData {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+
+    .data {
+
+        .p {
+            display: inline-block;
+            margin-left: 10px;
+            font-weight: bold;
+
+            #id {
+                // color: gray;
+                font-weight: 500;
+				margin-top: 4px;
+            }
+
+            #change {
+                color: red;
+                font-weight: 500;
+                margin-top: 4px;
+                margin-left: -2px;
+                border: none;
+				// padding: 5px;
+                // background-color: white;
+            }
+        }
+
+        img {
+            // width: 80px;
+            // height: 80px;
+            margin-top: -55px;
+        }
+    }
+
+    .edit {
+
+        .btn {
+            float: right;
+            margin-right: 10px;
+        }
+    }
+
+    p {
+        margin: -3px;
+    }
+}
+
+.conditions {
+
+    margin-top: 70px;
+    width: 100%;
+
+    .row {
+        width: 85%;
+        margin: auto;
+    }
+
+    .boxCon {
+
+        display: grid;
+        place-content: center;
+
+        #button{
+            border: none;
+            background-color: white;
+            margin-top: 20px;
+        }
+
+        .box {
+            width: 280px;
+            height: 100px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px rgb(192, 203, 251);
+
+            img {
+                width: 40px;
+                height: 40px;
+                margin-top: 30px;
+                float: left;
+                margin-left: 50px;
+            }
+
+            p {
+                display: inline-block;
+                margin-top: 38px;
+                margin-left: -35px;
+            }
+        }
+        .box:hover{
+            background:linear-gradient(-45deg, rgb(210, 241, 251),rgb(236, 223, 250));
+        }
+    }
+}
+
+.list-end {
+	// border: 1px solid black;
+	// padding: 0 10px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-around;
+	.final-out {
+		// margin: 10px 0;
+		text-align: center;
+		border-radius: 5px;
+		display: grid;
+		place-items: center;
+		width: 40%;
+		background-color: #28acea;
+		.fa-icon-final-out {
+			color: white;
+			font-size: 20px;
+			margin: 5px;
+		}
+	}
+	.cancel{
+		background-color: red;
+	}
+}
+
+.change-pass-modal{
+	text-align: center;
+	display: grid;
+	place-items: center;
+	h2{
+		font-size: 20px;
+	}
+}
+
+
+@media (max-width:768px) {
+    .proData {
+        .edit {
+
+            .btn {
+                float: none;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    #logout{
+        margin-top: 50px;
+    }
+
+}
+@media (max-width:380px) {
+    
+    #updatePhoto{
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width:500px) {
+	.change-pass-modal{
+		width: 90%;
+	}
+}
+

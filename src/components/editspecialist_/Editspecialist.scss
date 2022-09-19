@@ -1,0 +1,118 @@
+.specCon {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    display: grid;
+    place-content: center;
+
+    .cancel {
+        width: 40px;
+        margin-bottom: 5px;
+        border: none;
+        background-color: rgb(0, 0, 0, 0.07);
+        color: white;
+        margin-left: 86%;
+    }
+
+    .editdata {
+        width: 80%;
+        background-color: white;
+        font-size: 12px;
+
+        .imgsection {
+            white-space: normal;
+
+            img {
+                width: 200px;
+                height: auto;
+                margin-top: 20px;
+                margin-left: 35px;
+                border-radius: 4px;
+            }
+
+            #file {
+                margin-top: 15px;
+                margin-left: 63px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .data {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            p {
+                text-align: left;
+                margin-top: 20px;
+                font-weight: 500;
+            }
+
+            input {
+                width: 290px;
+                line-height: 35px;
+                background-color: #f0f0f0;
+                border: none;
+                border-radius: 4px;
+                padding-left: 20px;
+                font-size: 12px;
+            }
+
+            .price {
+                text-align: left;
+                width: 300px;
+
+                p {
+                    text-align: left;
+                }
+
+                input {
+                    width: 130px;
+                }
+            }
+
+            textarea {
+                display: block;
+                background-color: #f0f0f0;
+                border: none;
+                border-radius: 5px;
+                padding: 5px;
+            }
+
+            .btn {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 5px;
+                margin-right: 5px;
+                width: 144px;
+                font-size: small;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .specCon {
+        .cancel {
+            margin-left: auto;
+        }
+    }
+
+    .editdata {
+        width: 95vw !important;
+
+        .imgsection {
+            display: grid;
+            place-content: center;
+        }
+
+        .data {
+            display: grid !important;
+            place-content: center !important;
+        }
+    }
+}
