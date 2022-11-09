@@ -5,7 +5,7 @@ import Loading from "../../components/loading/Loading";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import r5 from "../../assets/r5.png";
 import star from "../../assets/star.png";
-import girl from "../../assets/girl.jpg";
+import girl from "../../assets/girl.jpeg";
 import locationIcon from "../../assets/locationIcon.png";
 import { SalonCard } from "./SalonCard";
 import { useAllSalons } from "../../hooks/useAllSalons";
@@ -266,7 +266,7 @@ export default function SalonsNearby() {
                 </>
               ) : (
                 <>
-                  {salonsArray.map((salon, index) => (
+                  {salonsArray?.map((salon, index) => (
                     <>
                       <SalonCard key={index} salon={salon} />
                     </>

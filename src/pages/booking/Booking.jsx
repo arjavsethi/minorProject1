@@ -107,12 +107,12 @@ const Booking = ({ userId }) => {
         <>
             <div className="bookingContainer md:px-8 md:pt-8 pt-6">
                 <p className="font-fira font-semibold text-xl px-7 md:px-0">
-                    Add Services with specialist to your cart
+                    Add Room with specification to your wishlist
                 </p>
                 <div className="login-hr margin-auto" />
                 <p className="font-medium font-fira w-8/12 text-center mx-auto md:mx-0 mt-4 md:mt-6">
-                    Services Selected {isMobile && <br />}(Your Selected
-                    Services will appear here)
+                    Room Selected {isMobile && <br />}(Your Selected
+                    Room will appear here)
                 </p>
                 <div className="login-hr small-one-hr margin-auto" />
                 <div className="servicesCatalogue grid grid-cols-1 px-2 md:grid-cols-3 gap-4 md:gap-4">
@@ -133,7 +133,7 @@ const Booking = ({ userId }) => {
                         ))}
                 </div>
                 <p className="subheading  added-services margin-auto mt-4 md:mt-6">
-                    Services Available
+                    Rooms Available
                 </p>
                 <div className="login-hr small-one-hr margin-auto" />
                 <div className="servicesCatalogue grid grid-cols-1 px-2 md:grid-cols-3 gap-4 md:gap-4">
@@ -165,7 +165,7 @@ const Booking = ({ userId }) => {
                         // }
                         onClick={handleCartUpdate}
                     >
-                        Update Cart
+                        Update Wishlist
                     </div>
 					{cartUpdated ? <>
 						<button

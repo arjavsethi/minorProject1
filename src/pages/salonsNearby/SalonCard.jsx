@@ -1,7 +1,7 @@
 import React from "react";
 import r5 from "../../assets/r5.png";
 import star from "../../assets/star.png";
-import girl from "../../assets/girl.jpg";
+import girl from "../../assets/girl.jpeg";
 import arrow from "../../assets/arrow.png";
 import locationIcon from "../../assets/locationIcon.png";
 import { useNavigate } from "react-router";

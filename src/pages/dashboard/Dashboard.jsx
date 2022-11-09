@@ -139,7 +139,7 @@ const Dashboard = ({ userFromContext }) => {
                                 <div className="box">
                                     <img src={j3} alt="" />
                                     <p>{monthlyBookings}</p>
-                                    <section className="mt-2">Appointment Booked</section>
+                                    <section className="mt-2">Room Booked</section>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +160,7 @@ const Dashboard = ({ userFromContext }) => {
 							<button>Add/Edit Buisness Details</button>
 						</div>
 						<div onClick={() => navigate("/addSalonTimings")} className="cursor-pointer button-dash-wrapper">
-							<button>Add/Edit Salon Timings</button>
+							<button>Add/Edit Home Stay Timings</button>
 						</div>
 				</div>
 				<div className="dash-seperate-hr">
@@ -173,11 +173,11 @@ const Dashboard = ({ userFromContext }) => {
                 <div className="dashboard-bottom-wrapper">
                     <div className="subdash-top-wrapper">
                         <div className="subdash-heading">
-                            <p className="subheading dash-heading">Services</p>
+                            <p className="subheading dash-heading">Rooms</p>
                             <div className="login-hr small-one-hr dash-heading" />
                         </div>
 						<div onClick={() => navigate("/addSalonServices")} className="cursor-pointer button-dash-wrapper">
-							<button>Add/Edit Services</button>
+							<button>Add/Edit Rooms</button>
 						</div>
                     </div>
 
@@ -207,11 +207,11 @@ const Dashboard = ({ userFromContext }) => {
 				<div className="dashboard-bottom-wrapper">
                     <div className="subdash-top-wrapper">
                         <div className="subdash-heading">
-                            <p className="subheading dash-heading">Specialists</p>
+                            <p className="subheading dash-heading">Services</p>
                             <div className="login-hr small-one-hr dash-heading" />
                         </div>
 						<div onClick={() => navigate("/addSalonSpecialists")} className="cursor-pointer text-white bg-site-500 font-fira text-md px-2 rounded w-5/12 md:text-lg md:w-auto">
-							<button className=" md:px-[7px] md:py-[10px]">Add/Edit Specialists</button>
+							<button className=" md:px-[7px] md:py-[10px]">Add/Edit Services</button>
 						</div>
                     </div>
 

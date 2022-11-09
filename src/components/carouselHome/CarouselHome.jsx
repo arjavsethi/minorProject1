@@ -58,7 +58,8 @@ const CarouselHome = (props) => {
 				<Carousel.Item>
                     <div className="carousel-img-wrapper">
                         <img
-                            className="d-block w-100 "
+                             
+                            className="d-block w-100 h-[100%]"
                             src={c4}
                             alt="First slide"
                         />

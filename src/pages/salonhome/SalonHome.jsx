@@ -13,7 +13,7 @@ import { useSingleDoc } from "../../hooks/useSingleDoc";
 
 import locationIcon from "../../assets/locationIcon.png";
 import star from "../../assets/star.png";
-import girl from "../../assets/girl.jpg";
+import girl from "../../assets/girl.jpeg";
 
 import Loading from "../../components/loading/Loading";
 import Footer from "../../components/footer/Footer";
@@ -80,7 +80,7 @@ const SalonHome = () => {
         <>
           <div className="salonHome">
             <div className="header-two">
-              <div className="banner-salonHome"></div>
+              {/* <div className="banner-salonHome"></div> */}
               <div className="btnCon">
                 <button
                   className={`button-salon-home cursor-pointer ${
@@ -88,7 +88,7 @@ const SalonHome = () => {
                   }`}
                   onClick={() => setInfoShow(true)}
                 >
-                  Salon Details
+                  Home Stay Details
                 </button>
                 {/* {user ? ( */}
                 <>
@@ -103,7 +103,7 @@ const SalonHome = () => {
                       // )
                     }
                   >
-                    Book Appointment
+                    Book Room
                   </button>
                 </>
                 {/* ) : (
@@ -142,7 +142,7 @@ const SalonHome = () => {
                 <>
                   <div className="row">
                     <div className="col-lx-8 col-lg-8 salonData white-bg-con">
-                      <div className="swiper-salon-wrapper">
+                      {/* <div className="swiper-salon-wrapper">
                         <Swiper
                           modules={[Pagination]}
                           pagination
@@ -163,7 +163,7 @@ const SalonHome = () => {
                             <img src={r5} alt="" />
                           </SwiperSlide>
                         </Swiper>
-                      </div>
+                      </div> */}
                       <div className="salon-home-page salon-name">
                         {salon.name}
                       </div>
@@ -227,14 +227,14 @@ const SalonHome = () => {
                       <div className="hr-home" />
 
                       <div className="salon-data-bottom">
-                        {salon.services && (
+                        {salon?.services && (
                           <>
                             <div className="specialists-slider-wrapper temp-div">
                               <ServicesSlider array={salon.services} />
                             </div>
                           </>
                         )}
-                        {salon.specialists && (
+                        {salon?.specialists && (
                           <>
                             <div className="specialists-slider-wrapper temp-div">
                               <SpecialistsSlider array={salon.specialists} />

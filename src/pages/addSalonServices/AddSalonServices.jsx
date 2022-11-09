@@ -124,8 +124,9 @@ export default function AddSalonServices() {
             );
         
 
-        return navigate("/addSalonSpecialists");
+        return navigate("/addSalonTimings");
     };
+    
 
     const [_userFromDB, set_UserFromDB] = useState(null);
     const [_isSalonOwner, set_IsSalonOwner] = useState(false);
@@ -151,10 +152,10 @@ export default function AddSalonServices() {
     }, [_getUserType, _userContext, _userFromDB, navigate]);
 
     const options = [
-		{ value: 'Body', label: 'Body' },
-		{ value: 'Face', label: 'Face' },
-		{ value: 'Hair', label: 'Hair' },
-		{ value: 'Facial Hair', label: 'Facial Hair' }
+		{ value: 'Body', label: 'Single' },
+		{ value: 'Face', label: 'Couple' },
+		{ value: 'Hair', label: 'Shared' },
+    { value: 'Facial Hair', label: 'Custom' }
 	  ]
 
     return (
@@ -162,9 +163,9 @@ export default function AddSalonServices() {
 		{isFetched ? 
 		<>
 			<div className="header-wrapper">
-                <div className="salonCon">Your Salon Services</div>
+                <div className="salonCon">Your Home Stay Room</div>
                 <div className="new-service-form">
-                    <p className="login-title">Add New Service</p>
+                    <p className="login-title">Add New Room</p>
                     <div className="login-hr" />
                     <form onSubmit={handleServiceSubmit}>
                         <div className="form-group login-sj">
@@ -184,13 +185,13 @@ export default function AddSalonServices() {
 
                         <div className="form-group login-sj">
                             <label htmlFor="exampleInputBuisnessName">
-                                Service Name
+                                Room Name
                             </label>
                             <input
                                 type="text"
                                 className="form-control"
                                 id="exampleInputBuisnessName"
-                                placeholder="Hair Cut: Faux Hawk"
+                                placeholder="Delux Room"
                                 required
                                 value={serviceName}
                                 onChange={(e) => setServiceName(e.target.value)}
@@ -198,14 +199,14 @@ export default function AddSalonServices() {
                         </div>
                         <div className="form-group login-sj">
                             <label htmlFor="exampleInputBuisnessName">
-                                Service Category
+                                Room Category
                             </label>
                              <Select options={options} onChange={(e) => setServiceCategory(e.value)}/>
                         </div>
 
                         <div className="form-group login-sj">
                             <label htmlFor="exampleInputBuisnessName">
-                                Service Price
+                                Room Price
                             </label>
                             <input
                                 type="text"
@@ -220,7 +221,7 @@ export default function AddSalonServices() {
                         </div>
                         <div className="form-group login-sj">
                             <label htmlFor="exampleInputBuisnessName">
-                                Service Discounted Price
+                                Room Discounted Price
                             </label>
                             <input
                                 type="text"
@@ -235,13 +236,13 @@ export default function AddSalonServices() {
                         </div>
                         <div className="form-group login-sj">
                             <label htmlFor="exampleInputBuisnessName">
-                                Service Description
+                                Room Description
                             </label>
                             <input
                                 type="text"
                                 className="form-control"
                                 id="exampleInputBuisnessName"
-                                placeholder="Describe your service"
+                                placeholder="Describe your Room"
                                 required
                                 value={serviceDescription}
                                 onChange={(e) =>
@@ -254,7 +255,7 @@ export default function AddSalonServices() {
                             type="submit"
                             className="btn-auth-sj btn btn-primary"
                         >
-                            Add This Service
+                            Add This Room
                         </button>
                     </form>
                 </div>
@@ -281,7 +282,7 @@ export default function AddSalonServices() {
                     type="submit"
                     className="w-[86%] bg-green-500 hover:bg-green-600 rounded-md py-2"
                 >
-                    <span className="text-white font-fira text-lg">Submit these Services</span>
+                    <span className="text-white font-fira text-lg">Submit these Room</span>
                 </button>
             </div>
 

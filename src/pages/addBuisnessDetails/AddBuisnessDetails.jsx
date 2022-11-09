@@ -114,7 +114,7 @@ export default function AddBuisnessDetails() {
                       type="text"
                       className="form-control"
                       id="exampleInputBuisnessName"
-                      placeholder="Kahira Unisex Parlour"
+                      placeholder="Indore Homestay"
                       required
                       value={businessName}
                       onChange={(e) => setBuisnessName(e.target.value)}
@@ -217,7 +217,7 @@ export default function AddBuisnessDetails() {
                       onChange={(e) => setBuisnessGST(e.target.value)}
                     />
                   </div>
-                  <h6>Your Salon Type</h6>
+                  <h6>Your Stay Type</h6>
                   <div className="salon-gender-type">
                     <div className="form-check">
                       <input
@@ -232,7 +232,7 @@ export default function AddBuisnessDetails() {
                         className="form-check-label"
                         htmlFor="flexRadioDefault1"
                       >
-                        Men
+                        Single
                       </label>
                     </div>
                     <div className="form-check">
@@ -248,7 +248,7 @@ export default function AddBuisnessDetails() {
                         className="form-check-label"
                         htmlFor="flexRadioDefault2"
                       >
-                        Women
+                        Couple
                       </label>
                     </div>
                     <div className="form-check">
@@ -264,7 +264,7 @@ export default function AddBuisnessDetails() {
                         className="form-check-label"
                         htmlFor="flexRadioDefault2"
                       >
-                        Unisex
+                        Family
                       </label>
                     </div>
                   </div>
@@ -285,7 +285,7 @@ export default function AddBuisnessDetails() {
                     className="btn-auth-sj btn btn-primary"
                     // onClick={() => navigate("/addSalonServices")}
                   >
-                    Register Salon and Proceed
+                    Register Home Stay and Proceed
                   </button>
                 </form>
               </div>

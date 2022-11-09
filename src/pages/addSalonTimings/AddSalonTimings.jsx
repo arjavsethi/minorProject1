@@ -207,7 +207,7 @@ export default function AddSalonTimings() {
                     <div className="form-wrapper">
                         <>
                             <div id="login-form">
-                                <p className="login-title">Add Salon Timings</p>
+                                <p className="login-title">Add Room Timings</p>
                                 <div className="login-hr" />
                                 <form onSubmit={handleSubmit}>
                                     <div className="timings-container">
@@ -246,13 +246,13 @@ export default function AddSalonTimings() {
 
                                     <div className="form-group login-sj">
                                         <label htmlFor="exampleInputBuisnessName">
-                                            Slot Interval in minutes
+                                         Availabilty in hours
                                         </label>
                                         <input
                                             type="text"
                                             className="form-control"
                                             id="exampleInputBuisnessName"
-                                            placeholder="30"
+                                            placeholder="24"
                                             required
                                             value={slotIntervalState}
                                             onChange={(e) =>

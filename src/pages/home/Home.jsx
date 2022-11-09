@@ -1,7 +1,7 @@
 import React from "react";
 import CarouselHome from "../../components/carouselHome/CarouselHome";
 import "./home.scss";
-import p1 from "../../assets/p1.jpg";
+import p1 from "../../assets/p1.png";
 import b1 from "../../assets/b1.png";
 import b2 from "../../assets/b2.jpg";
 import b3 from "../../assets/b3.jpg";
@@ -18,7 +18,7 @@ import calendar from "../../assets/calendar.png";
 import icon from "../../assets/Icon.jpg";
 import icon1 from "../../assets/Icon1.jpg";
 import shaver from "../../assets/shaver.png";
-import p2 from "../../assets/image.jpg";
+import p23 from "../../assets/p23.jpg";
 import Slider from "../../components/slider/Slider";
 
 import r1 from "../../assets/r1.png";
@@ -86,7 +86,7 @@ const Home = () => {
             <div className="container-fluid about">
                 <div className="row correction-class">
                     <div className="col-xl-6 col-lg-6 imgsection1">
-                        <img src={p2} alt="" />
+                        <img src={p23} alt="" />
                     </div>
                     <div className="col-xl-6 col-lg-6 aboutdata">
                         <h4 id="head1">About us</h4>
