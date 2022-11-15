@@ -186,28 +186,29 @@ export default function BookSlot() {
         salonId,
         bookedBy: user.uid,
         price: slotPrice,
-        statusCode: 0,
+        statusCode: 1,
         paymentStatus: "Not Recieved",
         bookingData: bookingData,
         cartId: location.state.cartId,
       });
       setBookingId(bookingID);
       setIsSlotBooked(true);
+      navigate(`/profile/${user.uid}`);
       // alert("Slot is booked");
     } else {
       throw new Error("No Services/Time/Date");
     }
   };
 
-  useEffect(() => {
-    if (bookingId && !ccavCheck) {
-      // (false)
-      setSlotLoading(false);
-      setCCAVCheck(true);
-      ccavFormRef.current.submit();
-      console.log("CCAV Submitted");
-    }
-  }, [bookingId, ccavCheck]);
+  // useEffect(() => {
+  //   if (bookingId && !ccavCheck) {
+  //     // (false)
+  //     setSlotLoading(false);
+  //     setCCAVCheck(true);
+  //     ccavFormRef.current.submit();
+  //     console.log("CCAV Submitted");
+  //   }
+  // }, [bookingId, ccavCheck]);
 
   const afterSlideChange = (index) => {
     if (!datesArray[index].isDisabled) {
@@ -394,7 +395,7 @@ export default function BookSlot() {
       </div>
 
       {/* TODO: Hide this form */}
-      <form
+      {/* <form
         style={{ display: "none", visibility: "hidden" }}
         method="POST"
         ref={ccavFormRef}
@@ -451,7 +452,7 @@ export default function BookSlot() {
             </td>
           </tr>
         </table>
-      </form>
+      </form> */}
     </>
   );
 }

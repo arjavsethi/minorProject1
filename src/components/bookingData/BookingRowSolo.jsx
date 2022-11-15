@@ -296,7 +296,7 @@ export default function BookingRowSolo({ booking, salonOwner }) {
               `${booking.slot.day}/${booking.slot.month}/${booking.slot.year}`}
           </p>
         </div>
-        <div className="mt-2 mx-10">
+        {/* <div className="mt-2 mx-10">
           <p className="booking-time-inner">
             {" "}
             {booking.bookingData[0].service.name}
@@ -304,7 +304,7 @@ export default function BookingRowSolo({ booking, salonOwner }) {
           <p className="booking-time-inner">
             {booking.bookingData[0].specialist.name}
           </p>
-        </div>
+        </div> */}
         <div className="booking-action">
           <div
             className="more-icon-wrapper"

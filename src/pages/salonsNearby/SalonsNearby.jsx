@@ -155,7 +155,7 @@ export default function SalonsNearby() {
       {isFetched ? (
         <>
           <div className="nearby-page-wrapper">
-            <div className="filters-sidebar">
+            {/* <div className="filters-sidebar">
               <div className="filter-head">
                 <p className="login-title">Filters</p>
                 <div className="login-hr hr-filter" />
@@ -253,7 +253,7 @@ export default function SalonsNearby() {
                   Apply
                 </button>
               </div>
-            </div>
+            </div> */}
 
             <div className="salon-nearby-page-wrapper">
               {salonsSortedArray.length > 0 ? (

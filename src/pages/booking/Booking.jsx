@@ -42,9 +42,9 @@ const Booking = ({ userId }) => {
         }
     }, [cart, cartCheck, servicesSelected]);
 
-    const addServiceById = (serviceId, specialistId) => {
+    const addServiceById = (serviceId) => {
 		setCartUpdated(false);
-        if (salon && salon.services && salon.specialists) {
+        if (salon && salon.services ) {
             if (
                 !servicesSelected.find(
                     (service) => service.service.serviceId === serviceId
@@ -54,12 +54,12 @@ const Booking = ({ userId }) => {
                 let serviceFromArray = salon.services.find(
                     (service) => service.serviceId === serviceId
                 );
-                let specialistFromArray = salon.specialists.find(
-                    (specialist) => specialist.specialistId === specialistId
-                );
+                // let specialistFromArray = salon.specialists.find(
+                //     (specialist) => specialist.specialistId === specialistId
+                // );
                 let serviceObject = {
                     service: serviceFromArray,
-                    specialist: specialistFromArray,
+                    // specialist: specialistFromArray,
                 };
                 setServicesSelected((prev) => [...prev, { ...serviceObject }]);
             } else {
@@ -143,7 +143,7 @@ const Booking = ({ userId }) => {
                                 <ServiceCardBooking
                                     index={index}
                                     service={service}
-                                    specialists={salon.specialists}
+                                    // specialists={salon.specialists}
                                     key={service.serviceId}
                                     bottom={true}
                                     addServiceById={addServiceById}

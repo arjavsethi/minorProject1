@@ -43,15 +43,15 @@ const ServiceCardBooking = ({
     placement: placementPosition,
   });
 
-  useEffect(() => {
-    if (service && !specialistsFetched && specialistsForService.length === 0) {
-      let specialistsArray = specialists.filter((specialist) => {
-        return specialist.category.includes(service.category);
-      });
-      setSpecialistsForService(specialistsArray);
-      setSpecialistsFetched(true);
-    }
-  }, [service, specialists, specialistsFetched, specialistsForService]);
+  // useEffect(() => {
+  //   if (service && !specialistsFetched && specialistsForService.length === 0) {
+  //     let specialistsArray = specialists.filter((specialist) => {
+  //       return specialist.category.includes(service.category);
+  //     });
+  //     setSpecialistsForService(specialistsArray);
+  //     setSpecialistsFetched(true);
+  //   }
+  // }, [service, specialists, specialistsFetched, specialistsForService]);
 
   const handleDelete = () => {
     setSpecialistSelected(null);
@@ -59,15 +59,15 @@ const ServiceCardBooking = ({
   };
 
   const handleAdd = () => {
-    setSpecialistsPopup(true);
+    // setSpecialistsPopup(true);
     // addServiceById(service.serviceId);
   };
 
   const handleFinalOut = () => {
-    if (service && specialistSelected) {
-      setSpecialistsPopup(false);
-      addServiceById(service.serviceId, specialistSelected.specialistId);
-      setSpecialistSelected(null);
+    if (service ) {
+      // setSpecialistsPopup(false);
+      addServiceById(service.serviceId);
+      // setSpecialistSelected(null);
     }
   };
 
@@ -154,7 +154,7 @@ const ServiceCardBooking = ({
         </div> */}
 
         <div className="cardBody h-3/6 px-4 py-4 min-h-[200px] relative">
-          {bottom && specialistsPopup && (
+          {/* {bottom && specialistsPopup && (
             <>
               <PortalSJ>
                 <div
@@ -167,7 +167,7 @@ const ServiceCardBooking = ({
                 </div>
               </PortalSJ>
             </>
-          )}
+          )} */}
           <div className="bodyTop flex justify-between items-center">
             <h5 className="cardTitle font-fira font-semibold ">
               {`${service.name}`}
@@ -193,7 +193,7 @@ const ServiceCardBooking = ({
               <>
                 <div
                   className="w-6/12 px-[50%] bg-site-500 hover:bg-green-500 py-2.5 cursor-pointer shadow-md rounded-md flex justify-center items-center"
-                  onClick={handleAdd}
+                  onClick={handleFinalOut}
                   ref={setRef}
                 >
                   <MdAdd className="AddIcon text-white text-2xl" />
