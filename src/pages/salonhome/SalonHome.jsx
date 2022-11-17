@@ -217,7 +217,7 @@ const SalonHome = () => {
 
                       <div className="hr-home" />
                       <div className="about-salon">
-                        <h6>About Salon</h6>
+                        <h6>About Home Stay</h6>
                         <div className="login-hr salon-home-hr" />
                         <p id="datas" className="salon-description">
                           {salon.description}
@@ -252,7 +252,7 @@ const SalonHome = () => {
                       <div className="salonHome-divider" />
 
                       <div className="salonTime white-bg-con">
-                        <h4>Salon Timing</h4>
+                        <h4>Home Stay Office Timing</h4>
                         {/* <div className="gd margin-correction">
                           <div>Monday To Friday</div> */}
                         {/* <div className="tts">
