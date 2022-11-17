@@ -29,7 +29,7 @@ export default function UserFlow() {
       <div className="user-type-cards-wrapper">
           <UserTypeCard
               title="For Everyone"
-              desc="Book Salons and spas near you"
+              desc="Book Home Stays"
 			  cardType="customer"
               handleClick={handleClick}
           />

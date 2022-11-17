@@ -186,7 +186,7 @@ export default function BookSlot() {
         salonId,
         bookedBy: user.uid,
         price: slotPrice,
-        statusCode: 1,
+        statusCode: 0,
         paymentStatus: "Not Recieved",
         bookingData: bookingData,
         cartId: location.state.cartId,
@@ -313,7 +313,7 @@ export default function BookSlot() {
       <div className="bookslot-page-wrapper">
         <div className="wrapper">
           <div className="top-wrapper">
-            <h6 className="page-head">Schedule Your Appointment</h6>
+            <h6 className="page-head">Schedule Your Check In</h6>
             <div className="month-input-wrapper">
               <label>
                 Month :

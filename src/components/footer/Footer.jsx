@@ -95,7 +95,7 @@ const Footer = () => {
                             <ul className="card-text">
                                 <li>
                                     <a href="/">
-                                        <Call /> 1234567890
+                                        <Call /> Minor Project created By Arjav, Atharva , Devesh and Bhushan
                                     </a>
                                 </li>
                                 <li>

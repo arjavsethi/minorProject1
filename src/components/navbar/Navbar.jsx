@@ -84,7 +84,7 @@ const Navbar = (props) => {
                                     isMobile ? "brand-mobile" : null
                                 }`}
                             >
-                                <img src={logo} alt="" />
+                                {/* <img src={logo} alt="" /> */}
                             </div>
                         </div>
                         <div

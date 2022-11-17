@@ -4,6 +4,7 @@ import star from "../../assets/star.png";
 import girl from "../../assets/girl.jpeg";
 import arrow from "../../assets/arrow.png";
 import locationIcon from "../../assets/locationIcon.png";
+import image from "../../assets/5.jpg";
 import { useNavigate } from "react-router";
 
 export const SalonCard = ({ salon }) => {
@@ -14,10 +15,10 @@ export const SalonCard = ({ salon }) => {
         <>
             <div className="salon-card-solo">
                 <div className="salon-image-wrapper">
-                    <img src={r5} alt="" />
+                    <img src={image} alt="" />
                 </div>
                 <div className="owner-photo-wrapper">
-                    <img src={girl} alt="" />
+                    {/* <img src={girl} alt="" /> */}
                 </div>
                 <div className="salon-data">
                     <h2>{salon.name}</h2>

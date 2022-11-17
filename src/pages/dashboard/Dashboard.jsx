@@ -159,7 +159,7 @@ const Dashboard = ({ userFromContext }) => {
 						<div onClick={() => navigate("/addBuisnessDetails")} className="cursor-pointer button-dash-wrapper">
 							<button>Add/Edit Buisness Details</button>
 						</div>
-						<div onClick={() => navigate("/addSalonTimings")} className="cursor-pointer button-dash-wrapper">
+						<div onClick={() => navigate("/addTimings")} className="cursor-pointer button-dash-wrapper">
 							<button>Add/Edit Home Stay Timings</button>
 						</div>
 				</div>
@@ -204,7 +204,7 @@ const Dashboard = ({ userFromContext }) => {
 					<div className="dot"></div>
 					<div className="dot"></div>
 				</div>
-				<div className="dashboard-bottom-wrapper">
+				{/* <div className="dashboard-bottom-wrapper">
                     <div className="subdash-top-wrapper">
                         <div className="subdash-heading">
                             <p className="subheading dash-heading">Services</p>
@@ -213,9 +213,9 @@ const Dashboard = ({ userFromContext }) => {
 						<div onClick={() => navigate("/addSalonSpecialists")} className="cursor-pointer text-white bg-site-500 font-fira text-md px-2 rounded w-5/12 md:text-lg md:w-auto">
 							<button className=" md:px-[7px] md:py-[10px]">Add/Edit Services</button>
 						</div>
-                    </div>
+                    </div> */}
 
-                    <div className="servicesCatalogue grid grid-cols-1 px-2 mt-3 md:grid-cols-3 gap-4 md:gap-4">
+                    {/* <div className="servicesCatalogue grid grid-cols-1 px-2 mt-3 md:grid-cols-3 gap-4 md:gap-4">
                         {salon && salon.specialists && 
                             salon.specialists.map((specialist, index) => (
                                 <>
@@ -228,8 +228,8 @@ const Dashboard = ({ userFromContext }) => {
                                     />
                                 </>
                             ))}
-                    </div>
-                </div>
+                    </div> */}
+                {/* </div>p */}
             </div>
 		</> : <><Loading/></>}
             

@@ -124,7 +124,7 @@ export default function AddSalonServices() {
             );
         
 
-        return navigate("/addSalonTimings");
+        return navigate("/addTimings");
     };
     
 

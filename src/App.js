@@ -213,7 +213,7 @@ function App() {
                                             element={<AddSalonSpecialists />}
                                         />
                                         <Route
-                                            path="/addSalonTimings"
+                                            path="/addTimings"
                                             element={<AddSalonTimings />}
                                         />
                                         <Route

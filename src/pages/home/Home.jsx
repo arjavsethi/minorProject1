@@ -28,7 +28,7 @@ import { useCartContext } from "../../hooks/useCartContext";
 const Home = () => {
     return (
         <>
-            <CarouselHome />
+            {/* <CarouselHome /> */}
 
             <div className="container mainCon">
                 <div className="row features">

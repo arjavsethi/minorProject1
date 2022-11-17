@@ -267,7 +267,7 @@ export default function AddSalonTimings() {
                                         type="submit"
                                         className="btn-auth-sj btn btn-primary"
                                     >
-                                        Submit Salon Timings
+                                        Submit  Timings
                                     </button>
                                 </form>
                             </div>
