@@ -227,7 +227,7 @@ function App() {
                                         />
 
                                         <Route
-                                            path="/salonsNearby"
+                                            path="/homestayNearby"
                                             element={<SalonsNearby />}
                                         />
                                         <Route

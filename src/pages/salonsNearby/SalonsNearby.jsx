@@ -149,7 +149,7 @@ export default function SalonsNearby() {
     console.log("Filtered :", arraySet);
     setSalonsArray(arraySet);
   };
-
+console.log(salonsArray)
   return (
     <>
       {isFetched ? (
@@ -256,9 +256,9 @@ export default function SalonsNearby() {
             </div> */}
 
             <div className="salon-nearby-page-wrapper">
-              {salonsSortedArray.length > 0 ? (
+              {salonsArray.length > 0 ? (
                 <>
-                  {salonsSortedArray.map((salon, index) => (
+                  {salonsArray.map((salon, index) => (
                     <>
                       <SalonCard key={index} salon={salon} />
                     </>

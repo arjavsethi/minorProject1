@@ -103,7 +103,7 @@ export default function BookingData({ userContext }) {
         <>
             <div className="bookings-data-wrapper">
                 <h6 className="table-heading">
-                    {isSalonOwner ? "Your Salon Bookings" : "Your Bookings"}
+                    {isSalonOwner ? "Your Homestay Bookings" : "Your Bookings"}
                 </h6>
                 <div className="login-hr table-head-hr" />
                 <div className="bookings-table">

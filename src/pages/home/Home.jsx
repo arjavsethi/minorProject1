@@ -50,7 +50,7 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-6 col-lg-6 col-xl-6">
                                     <div className="sub-feature-wrapper">
-                                        <img src={shaver} alt="" />
+                                        <img src={calendar} alt="" />
                                         <p>Best Service</p>
                                     </div>
                                 </div>

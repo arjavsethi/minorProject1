@@ -130,12 +130,12 @@ const Navbar = (props) => {
                                                         color: "black",
                                                         // margin: "0px 10px 0px 10px",
                                                     }}
-                                                    to="/salonsNearby"
+                                                    to="/homestayNearby"
                                                 >
                                                     <p
                                                         className={`nav-link-text ${
                                                             location.pathname ===
-                                                            "/salonsNearby"
+                                                            "/homestayNearby"
                                                                 ? "active"
                                                                 : null
                                                         }`}
@@ -190,12 +190,12 @@ const Navbar = (props) => {
                                                         color: "black",
                                                         // margin: "0px 10px 0px 10px",
                                                     }}
-                                                    to="/salonsNearby"
+                                                    to="/homestayNearby"
                                                 >
                                                     <p
                                                         className={`nav-link-text ${
                                                             location.pathname ===
-                                                            "/salonsNearby"
+                                                            "/homestayNearby"
                                                                 ? "active"
                                                                 : null
                                                         }`}
@@ -207,7 +207,7 @@ const Navbar = (props) => {
                                                 <div
                                                     className={`hr ${
                                                         location.pathname ===
-                                                        "/salonsNearby"
+                                                        "/homestayNearby"
                                                             ? "active"
                                                             : null
                                                     }`}
